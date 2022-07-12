@@ -1,0 +1,107 @@
+.app {
+  background: rgba(87, 67, 177, 0.997);
+  height: 100vh;
+  padding: 30px;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: rgba(12, 12, 12, 0.91); 
+}
+
+.remove {
+  background-color: rgba(135, 2, 2, 0.927) 
+}
+
+.todo-list {
+  
+  margin: auto;
+  background: #e8e8e8e9;
+  border-radius: 4px;
+  max-width: 800px;
+  padding: 5px;
+}
+
+.todo {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.822);
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.236);
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(151, 150, 150) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.textbox {
+  padding-left: 330px;
+  padding-top: 0px;
+  max-width: 800px;
+}
+
+.input {
+  font-style: italic;
+}
+
+.note {
+
+    align-items: center;
+    background: rgba(255, 255, 255, 0.822);
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 3px 10px;
+  }
